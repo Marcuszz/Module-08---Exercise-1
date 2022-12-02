@@ -4,6 +4,11 @@ function confirm(){
         return false;
     }
 
+    if(document.empForm.fname.value==""){
+        document.getElementById("fnameErr").innerHTML = "Please enter your first name";
+        return false;
+    }
+
     if(document.empForm.lname.value==""){
         document.getElementById("lnameErr").innerHTML = "Please enter your last name";
         return false;
